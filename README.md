@@ -182,6 +182,7 @@ The built `dist/` folder can be deployed to:
 ## 📚 Documentation
 
 - **[SETUP.md](SETUP.md)** - Detailed setup and configuration guide
+- **[DEPLOYMENT.md](DEPLOYMENT.md)** - Production deployment instructions
 - **[PROJECT-SUMMARY.md](PROJECT-SUMMARY.md)** - Complete technical overview
 - **[database-migration.sql](database-migration.sql)** - Database schema and seed data
 
