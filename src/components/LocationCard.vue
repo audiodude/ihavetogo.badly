@@ -7,7 +7,7 @@
           <h3 class="font-semibold text-lg text-gray-800 mb-1">
             {{ location.business_name }}
           </h3>
-          <p class="text-sm text-gray-600">{{ location.address }}</p>
+          <p class="text-sm text-gray-800">{{ location.address }}</p>
         </div>
         <button
           @click="$emit('favorite', location.id)"
@@ -27,11 +27,11 @@
             {{ star <= Math.round(averageRating) ? '⭐' : '☆' }}
           </span>
         </div>
-        <span class="text-sm text-gray-600">
+        <span class="text-sm text-gray-800">
           {{ averageRating.toFixed(1) }} ({{ location.reviews.length }} reviews)
         </span>
       </div>
-      <div v-else class="text-sm text-gray-500 mb-2">
+      <div v-else class="text-sm text-gray-700 mb-2">
         No reviews yet
       </div>
 
@@ -40,10 +40,10 @@
         <div v-if="latestReview.title" class="font-medium text-sm mb-1">
           "{{ latestReview.title }}"
         </div>
-        <div v-if="latestReview.review_text" class="text-sm text-gray-600 line-clamp-2">
+        <div v-if="latestReview.review_text" class="text-sm text-gray-800 line-clamp-2">
           {{ latestReview.review_text }}
         </div>
-        <div class="text-xs text-gray-500 mt-2">
+        <div class="text-xs text-gray-700 mt-2">
           {{ formatDate(latestReview.created_at) }}
         </div>
       </div>
@@ -59,7 +59,7 @@
             class="flex items-center space-x-1 px-3 py-1 rounded-full transition-colors"
             :class="location.user_vote === 'up'
               ? 'bg-green-100 text-green-700'
-              : 'hover:bg-gray-100 text-gray-600'"
+              : 'hover:bg-gray-100 text-gray-800'"
           >
             <span>👍</span>
             <span class="text-sm font-medium">{{ location.upvotes }}</span>
@@ -70,7 +70,7 @@
             class="flex items-center space-x-1 px-3 py-1 rounded-full transition-colors"
             :class="location.user_vote === 'down'
               ? 'bg-red-100 text-red-700'
-              : 'hover:bg-gray-100 text-gray-600'"
+              : 'hover:bg-gray-100 text-gray-800'"
           >
             <span>👎</span>
             <span class="text-sm font-medium">{{ location.downvotes }}</span>
@@ -78,7 +78,7 @@
         </div>
 
         <!-- Distance -->
-        <div v-if="distance" class="text-sm text-gray-500">
+        <div v-if="distance" class="text-sm text-gray-700">
           {{ distance.toFixed(1) }} mi
         </div>
       </div>

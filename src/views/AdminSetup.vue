@@ -5,7 +5,7 @@
         <!-- Header -->
         <div class="px-6 py-4 border-b border-gray-200">
           <h1 class="text-2xl font-bold text-gray-800">Admin Setup</h1>
-          <p class="text-gray-600 mt-1">
+          <p class="text-gray-800 mt-1">
             Welcome! As the first user, you're now an admin. Please configure the initial app settings.
           </p>
         </div>
@@ -25,9 +25,9 @@
                 step="50"
                 class="w-32 px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
               >
-              <span class="text-gray-600">feet</span>
+              <span class="text-gray-800">feet</span>
             </div>
-            <p class="text-sm text-gray-500 mt-1">
+            <p class="text-sm text-gray-700 mt-1">
               Maximum distance a custom pin can be from the geocoded address before showing a warning.
             </p>
           </div>
@@ -48,9 +48,9 @@
                   max="10"
                   class="w-24 px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                 >
-                <span class="text-gray-600">reviews</span>
+                <span class="text-gray-800">reviews</span>
               </div>
-              <p class="text-sm text-gray-500 mt-1">
+              <p class="text-sm text-gray-700 mt-1">
                 Users receive their first invitation after adding this many reviews.
               </p>
             </div>
@@ -67,9 +67,9 @@
                   max="20"
                   class="w-24 px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                 >
-                <span class="text-gray-600">total reviews</span>
+                <span class="text-gray-800">total reviews</span>
               </div>
-              <p class="text-sm text-gray-500 mt-1">
+              <p class="text-sm text-gray-700 mt-1">
                 Users receive their second invitation after reaching this total number of reviews.
               </p>
             </div>
@@ -86,9 +86,9 @@
                   max="50"
                   class="w-24 px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                 >
-                <span class="text-gray-600">total reviews</span>
+                <span class="text-gray-800">total reviews</span>
               </div>
-              <p class="text-sm text-gray-500 mt-1">
+              <p class="text-sm text-gray-700 mt-1">
                 Users receive their third invitation after reaching this total number of reviews.
               </p>
             </div>
@@ -105,9 +105,9 @@
                   max="30"
                   class="w-24 px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                 >
-                <span class="text-gray-600">days</span>
+                <span class="text-gray-800">days</span>
               </div>
-              <p class="text-sm text-gray-500 mt-1">
+              <p class="text-sm text-gray-700 mt-1">
                 Minimum time between receiving invitations for each user.
               </p>
             </div>
@@ -126,9 +126,9 @@
                 max="10"
                 class="w-24 px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
               >
-              <span class="text-gray-600">reviews per day</span>
+              <span class="text-gray-800">reviews per day</span>
             </div>
-            <p class="text-sm text-gray-500 mt-1">
+            <p class="text-sm text-gray-700 mt-1">
               Default maximum number of reviews a user can add per day. Admins can adjust this per user.
             </p>
           </div>
@@ -150,7 +150,7 @@
           <div class="flex justify-between pt-6 border-t border-gray-200">
             <RouterLink
               to="/"
-              class="px-6 py-2 text-gray-600 hover:text-gray-800 font-medium"
+              class="px-6 py-2 text-gray-800 hover:text-gray-800 font-medium"
             >
               Skip for Now
             </RouterLink>

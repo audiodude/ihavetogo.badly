@@ -5,14 +5,14 @@
       <div v-if="loading" class="text-center">
         <div class="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-500 mx-auto mb-4"></div>
         <h2 class="text-xl font-semibold text-gray-800 mb-2">Validating Invitation</h2>
-        <p class="text-gray-600">Please wait while we check your invitation...</p>
+        <p class="text-gray-800">Please wait while we check your invitation...</p>
       </div>
 
       <!-- Invalid invitation -->
       <div v-else-if="error" class="text-center">
         <div class="text-6xl mb-4">😔</div>
         <h2 class="text-xl font-semibold text-gray-800 mb-2">Invalid Invitation</h2>
-        <p class="text-gray-600 mb-6">{{ error }}</p>
+        <p class="text-gray-800 mb-6">{{ error }}</p>
         <RouterLink
           to="/"
           class="inline-block px-6 py-2 bg-blue-500 hover:bg-blue-600 text-white rounded-lg font-medium"
@@ -25,8 +25,8 @@
       <div v-else-if="invitation?.used_by" class="text-center">
         <div class="text-6xl mb-4">✅</div>
         <h2 class="text-xl font-semibold text-gray-800 mb-2">Invitation Already Used</h2>
-        <p class="text-gray-600 mb-2">This invitation has already been used.</p>
-        <p class="text-sm text-gray-500 mb-6">
+        <p class="text-gray-800 mb-2">This invitation has already been used.</p>
+        <p class="text-sm text-gray-700 mb-6">
           Used on {{ formatDate(invitation.used_at!) }}
         </p>
 
@@ -60,7 +60,7 @@
       <div v-else-if="invitation" class="text-center">
         <div class="text-6xl mb-4">🎉</div>
         <h2 class="text-xl font-semibold text-gray-800 mb-2">You're Invited!</h2>
-        <p class="text-gray-600 mb-6">
+        <p class="text-gray-800 mb-6">
           You've been invited to join BathroomFinder - the community app for finding and reviewing public bathrooms.
         </p>
 

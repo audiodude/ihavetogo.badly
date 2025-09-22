@@ -9,10 +9,10 @@
               {{ star <= review.star_rating ? '⭐' : '☆' }}
             </span>
           </div>
-          <span class="text-sm text-gray-600">{{ review.star_rating }}/5</span>
+          <span class="text-sm text-gray-800">{{ review.star_rating }}/5</span>
         </div>
 
-        <div class="text-sm text-gray-500">
+        <div class="text-sm text-gray-700">
           {{ formatDate(review.created_at) }}
         </div>
       </div>
@@ -24,7 +24,7 @@
           class="flex items-center space-x-1 px-3 py-1 rounded-full transition-colors"
           :class="review.user_vote === 'up'
             ? 'bg-green-100 text-green-700'
-            : 'hover:bg-gray-100 text-gray-600'"
+            : 'hover:bg-gray-100 text-gray-800'"
         >
           <span>👍</span>
           <span class="text-sm font-medium">{{ review.upvotes || 0 }}</span>
@@ -35,7 +35,7 @@
           class="flex items-center space-x-1 px-3 py-1 rounded-full transition-colors"
           :class="review.user_vote === 'down'
             ? 'bg-red-100 text-red-700'
-            : 'hover:bg-gray-100 text-gray-600'"
+            : 'hover:bg-gray-100 text-gray-800'"
         >
           <span>👎</span>
           <span class="text-sm font-medium">{{ review.downvotes || 0 }}</span>

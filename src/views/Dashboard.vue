@@ -8,7 +8,7 @@
         </div>
         <div>
           <h1 class="text-2xl font-bold text-gray-800">{{ authStore.user?.email }}</h1>
-          <div class="flex items-center space-x-4 text-sm text-gray-600 mt-1">
+          <div class="flex items-center space-x-4 text-sm text-gray-800 mt-1">
             <span>{{ userStats.totalReviews }} reviews</span>
             <span>{{ userStats.totalLocations }} locations added</span>
             <span>{{ userStats.totalFavorites }} favorites</span>
@@ -45,7 +45,7 @@
             class="py-4 px-1 border-b-2 font-medium text-sm"
             :class="activeTab === tab.key
               ? 'border-blue-500 text-blue-600'
-              : 'border-transparent text-gray-500 hover:text-gray-700'"
+              : 'border-transparent text-gray-700 hover:text-gray-700'"
           >
             {{ tab.label }}
           </button>
@@ -59,7 +59,7 @@
           <div v-if="favorites.length === 0" class="text-center py-12">
             <div class="text-6xl mb-4">⭐</div>
             <h3 class="text-xl font-semibold text-gray-700 mb-2">No favorites yet</h3>
-            <p class="text-gray-500">Favorite locations to easily find them later</p>
+            <p class="text-gray-700">Favorite locations to easily find them later</p>
           </div>
           <div v-else class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             <LocationCard
@@ -77,7 +77,7 @@
           <div v-if="userReviews.length === 0" class="text-center py-12">
             <div class="text-6xl mb-4">📝</div>
             <h3 class="text-xl font-semibold text-gray-700 mb-2">No reviews yet</h3>
-            <p class="text-gray-500">Add your first bathroom review to get started</p>
+            <p class="text-gray-700">Add your first bathroom review to get started</p>
           </div>
           <div v-else class="space-y-4">
             <ReviewCard
@@ -93,7 +93,7 @@
           <div v-if="userLocations.length === 0" class="text-center py-12">
             <div class="text-6xl mb-4">📍</div>
             <h3 class="text-xl font-semibold text-gray-700 mb-2">No locations added yet</h3>
-            <p class="text-gray-500">Be the first to add a bathroom location in your area</p>
+            <p class="text-gray-700">Be the first to add a bathroom location in your area</p>
             <RouterLink
               to="/add-location"
               class="inline-block mt-4 px-6 py-2 bg-blue-500 hover:bg-blue-600 text-white rounded-lg font-medium"

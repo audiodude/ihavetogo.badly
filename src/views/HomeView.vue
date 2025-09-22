@@ -71,7 +71,7 @@ const goToAddLocation = () => {
             <span>{{ showMap ? 'List View' : 'Map View' }}</span>
           </button>
 
-          <span v-if="loadingLocation" class="text-sm text-gray-500">
+          <span v-if="loadingLocation" class="text-sm text-gray-700">
             Getting your location...
           </span>
         </div>
@@ -93,7 +93,7 @@ const goToAddLocation = () => {
         <div class="text-center">
           <div class="text-6xl mb-4">🚽</div>
           <h2 class="text-2xl font-bold text-gray-800 mb-2">No bathrooms found</h2>
-          <p class="text-gray-600 mb-6">Be the first to add a bathroom in your area!</p>
+          <p class="text-gray-800 mb-6">Be the first to add a bathroom in your area!</p>
           <button
             @click="goToAddLocation"
             class="px-6 py-3 bg-blue-500 hover:bg-blue-600 text-white rounded-lg font-medium"
@@ -107,7 +107,7 @@ const goToAddLocation = () => {
            class="absolute inset-0 flex items-center justify-center">
         <div class="text-center">
           <div class="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-500 mx-auto mb-4"></div>
-          <p class="text-gray-600">Loading locations...</p>
+          <p class="text-gray-800">Loading locations...</p>
         </div>
       </div>
 

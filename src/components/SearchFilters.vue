@@ -66,7 +66,7 @@
 
       <!-- Results count -->
       <div class="flex-1 text-right">
-        <span class="text-sm text-gray-500">
+        <span class="text-sm text-gray-700">
           {{ locationsStore.filteredLocations.length }}
           {{ locationsStore.filteredLocations.length === 1 ? 'location' : 'locations' }} found
         </span>

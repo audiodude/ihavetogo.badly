@@ -3,7 +3,7 @@
     <div class="bg-white rounded-lg shadow-lg">
       <div class="px-6 py-4 border-b border-gray-200">
         <h1 class="text-2xl font-bold text-gray-800">Add New Bathroom Location</h1>
-        <p class="text-gray-600 mt-1">Help others find clean, accessible bathrooms in your area</p>
+        <p class="text-gray-800 mt-1">Help others find clean, accessible bathrooms in your area</p>
       </div>
 
       <div class="p-6">
@@ -11,7 +11,7 @@
         <div class="mb-8">
           <div class="flex items-center justify-between mb-2">
             <span class="text-sm font-medium text-blue-600">Step {{ currentStep }} of 3</span>
-            <span class="text-sm text-gray-500">{{ stepTitles[currentStep - 1] }}</span>
+            <span class="text-sm text-gray-700">{{ stepTitles[currentStep - 1] }}</span>
           </div>
           <div class="w-full bg-gray-200 rounded-full h-2">
             <div class="bg-blue-600 h-2 rounded-full transition-all duration-300"
@@ -63,8 +63,8 @@
                   ? 'border-blue-500 bg-blue-50'
                   : 'border-gray-300'"
               >
-                <div class="font-medium">{{ result.formatted_address }}</div>
-                <div class="text-sm text-gray-600">
+                <div class="font-medium text-gray-900">{{ result.formatted_address }}</div>
+                <div class="text-sm text-gray-700">
                   Confidence: {{ result.confidence }}/10
                 </div>
               </button>
@@ -86,7 +86,7 @@
         <div v-show="currentStep === 2" class="space-y-6">
           <div>
             <h3 class="text-lg font-semibold mb-2">Precise Bathroom Location</h3>
-            <p class="text-gray-600 mb-4">
+            <p class="text-gray-800 mb-4">
               Click on the map to show exactly where the bathroom is located within the building.
               This is optional but helps users find the bathroom more easily.
             </p>
@@ -111,7 +111,7 @@
               >
                 Clear Pin
               </button>
-              <p v-if="formData.pin_latitude" class="text-sm text-gray-600">
+              <p v-if="formData.pin_latitude" class="text-sm text-gray-800">
                 Pin placed at {{ formData.pin_latitude?.toFixed(6) }}, {{ formData.pin_longitude?.toFixed(6) }}
               </p>
             </div>
@@ -122,7 +122,7 @@
         <div v-show="currentStep === 3" class="space-y-6">
           <div>
             <h3 class="text-lg font-semibold mb-2">Add Initial Review</h3>
-            <p class="text-gray-600 mb-4">
+            <p class="text-gray-800 mb-4">
               A review is required when adding a new location to help others know what to expect.
             </p>
           </div>
@@ -147,7 +147,7 @@
           <button
             v-if="currentStep > 1"
             @click="currentStep--"
-            class="px-6 py-2 text-gray-600 hover:text-gray-800 font-medium"
+            class="px-6 py-2 text-gray-800 hover:text-gray-800 font-medium"
           >
             Back
           </button>

@@ -15,7 +15,7 @@
         >
           ⭐
         </button>
-        <span class="ml-2 text-sm text-gray-600">{{ rating }} / 5</span>
+        <span class="ml-2 text-sm text-gray-800">{{ rating }} / 5</span>
       </div>
     </div>
 
@@ -32,7 +32,7 @@
         step="0.5"
         class="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer slider"
       >
-      <div class="flex justify-between text-xs text-gray-500 mt-1">
+      <div class="flex justify-between text-xs text-gray-700 mt-1">
         <span>1</span>
         <span>2</span>
         <span>3</span>
@@ -65,7 +65,7 @@
         placeholder="e.g., Inside the hotel lobby, across from the restaurant"
         class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
       >
-      <p class="text-xs text-gray-500 mt-1">Help others find the exact location within the building</p>
+      <p class="text-xs text-gray-700 mt-1">Help others find the exact location within the building</p>
     </div>
 
     <!-- Review Text -->
@@ -80,7 +80,7 @@
         placeholder="Share your experience..."
         class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent resize-none"
       ></textarea>
-      <div class="flex justify-between text-xs text-gray-500 mt-1">
+      <div class="flex justify-between text-xs text-gray-700 mt-1">
         <span>Optional</span>
         <span>{{ reviewText.length }}/500</span>
       </div>
@@ -107,7 +107,7 @@
           :disabled="photos.length >= 4"
           class="w-full border-2 border-dashed border-gray-300 rounded-lg py-6 px-4 text-center hover:border-gray-400 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
         >
-          <div class="text-gray-500">
+          <div class="text-gray-700">
             <svg class="mx-auto h-8 w-8 mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"/>
             </svg>

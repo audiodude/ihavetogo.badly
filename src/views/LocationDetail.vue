@@ -2,7 +2,7 @@
   <div v-if="loading" class="flex items-center justify-center min-h-screen">
     <div class="text-center">
       <div class="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-500 mx-auto mb-4"></div>
-      <p class="text-gray-600">Loading location...</p>
+      <p class="text-gray-800">Loading location...</p>
     </div>
   </div>
 
@@ -10,7 +10,7 @@
     <div class="text-center">
       <div class="text-6xl mb-4">😔</div>
       <h2 class="text-2xl font-bold text-gray-800 mb-2">Location not found</h2>
-      <p class="text-gray-600 mb-4">This bathroom location may have been removed or doesn't exist.</p>
+      <p class="text-gray-800 mb-4">This bathroom location may have been removed or doesn't exist.</p>
       <RouterLink to="/" class="px-4 py-2 bg-blue-500 hover:bg-blue-600 text-white rounded-lg">
         Back to Map
       </RouterLink>
@@ -25,7 +25,7 @@
         <div class="flex items-start justify-between">
           <div class="flex-1">
             <h1 class="text-3xl font-bold text-gray-800 mb-2">{{ location.business_name }}</h1>
-            <p class="text-gray-600 mb-4">{{ location.address }}</p>
+            <p class="text-gray-800 mb-4">{{ location.address }}</p>
 
             <!-- Average Rating -->
             <div v-if="averageRating > 0" class="flex items-center space-x-3 mb-4">
@@ -38,7 +38,7 @@
                 {{ averageRating.toFixed(1) }} ({{ location.reviews.length }} reviews)
               </span>
             </div>
-            <div v-else class="text-gray-500 mb-4">No reviews yet</div>
+            <div v-else class="text-gray-700 mb-4">No reviews yet</div>
 
             <!-- Vote buttons -->
             <div class="flex items-center space-x-4">
@@ -47,7 +47,7 @@
                 class="flex items-center space-x-2 px-4 py-2 rounded-lg transition-colors"
                 :class="location.user_vote === 'up'
                   ? 'bg-green-100 text-green-700'
-                  : 'hover:bg-gray-100 text-gray-600'"
+                  : 'hover:bg-gray-100 text-gray-800'"
               >
                 <span>👍</span>
                 <span class="font-medium">{{ location.upvotes }}</span>
@@ -58,7 +58,7 @@
                 class="flex items-center space-x-2 px-4 py-2 rounded-lg transition-colors"
                 :class="location.user_vote === 'down'
                   ? 'bg-red-100 text-red-700'
-                  : 'hover:bg-gray-100 text-gray-600'"
+                  : 'hover:bg-gray-100 text-gray-800'"
               >
                 <span>👎</span>
                 <span class="font-medium">{{ location.downvotes }}</span>
@@ -101,7 +101,7 @@
             Reviews ({{ visibleReviews.length }})
           </h2>
           <div class="flex items-center space-x-2">
-            <label class="text-sm text-gray-600">Sort by:</label>
+            <label class="text-sm text-gray-800">Sort by:</label>
             <select
               v-model="reviewSort"
               class="px-3 py-1 border border-gray-300 rounded text-sm focus:ring-2 focus:ring-blue-500 focus:border-transparent"
@@ -119,7 +119,7 @@
         <div v-if="visibleReviews.length === 0" class="p-8 text-center">
           <div class="text-6xl mb-4">📝</div>
           <h3 class="text-xl font-semibold text-gray-700 mb-2">No reviews yet</h3>
-          <p class="text-gray-500 mb-4">Be the first to review this bathroom location!</p>
+          <p class="text-gray-700 mb-4">Be the first to review this bathroom location!</p>
           <RouterLink
             v-if="authStore.isLoggedIn"
             to="/add-review"

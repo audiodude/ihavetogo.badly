@@ -9,7 +9,7 @@
               {{ star <= review.star_rating ? '⭐' : '☆' }}
             </span>
           </div>
-          <span class="text-sm text-gray-600">{{ review.star_rating }}/5</span>
+          <span class="text-sm text-gray-800">{{ review.star_rating }}/5</span>
         </div>
 
         <RouterLink
@@ -18,12 +18,12 @@
         >
           {{ review.location.business_name }}
         </RouterLink>
-        <p class="text-sm text-gray-600 mt-1">
+        <p class="text-sm text-gray-800 mt-1">
           {{ review.location.address }}
         </p>
       </div>
 
-      <div class="text-sm text-gray-500">
+      <div class="text-sm text-gray-700">
         {{ formatDate(review.created_at) }}
       </div>
     </div>
@@ -34,7 +34,7 @@
         "{{ review.title }}"
       </div>
 
-      <div v-if="review.address_note" class="text-sm text-gray-600 bg-gray-50 p-3 rounded">
+      <div v-if="review.address_note" class="text-sm text-gray-800 bg-gray-50 p-3 rounded">
         <span class="font-medium">Location:</span> {{ review.address_note }}
       </div>
 
@@ -57,7 +57,7 @@
 
     <!-- Footer -->
     <div class="flex items-center justify-between pt-4 mt-4 border-t border-gray-200">
-      <div class="flex items-center space-x-4 text-sm text-gray-600">
+      <div class="flex items-center space-x-4 text-sm text-gray-800">
         <span class="flex items-center space-x-1">
           <span>👍</span>
           <span>{{ review.upvotes || 0 }}</span>

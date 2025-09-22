@@ -14,7 +14,7 @@
          class="text-center py-12">
       <div class="text-6xl mb-4">🔍</div>
       <h3 class="text-xl font-semibold text-gray-700 mb-2">No locations found</h3>
-      <p class="text-gray-500">Try adjusting your search or filters</p>
+      <p class="text-gray-700">Try adjusting your search or filters</p>
     </div>
   </div>
 </template>

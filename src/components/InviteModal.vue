@@ -5,7 +5,7 @@
         <h2 class="text-xl font-bold text-gray-800">Send Invitations</h2>
         <button
           @click="$emit('close')"
-          class="text-gray-400 hover:text-gray-600"
+          class="text-gray-400 hover:text-gray-800"
         >
           <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
@@ -14,7 +14,7 @@
       </div>
 
       <div class="space-y-4">
-        <p class="text-gray-600">
+        <p class="text-gray-800">
           You have <strong>{{ availableInvitations }}</strong>
           {{ availableInvitations === 1 ? 'invitation' : 'invitations' }} available to send.
         </p>
@@ -58,7 +58,7 @@
         <div class="flex space-x-3 pt-4">
           <button
             @click="$emit('close')"
-            class="flex-1 px-4 py-2 text-gray-600 hover:text-gray-800 font-medium"
+            class="flex-1 px-4 py-2 text-gray-800 hover:text-gray-800 font-medium"
             :disabled="sending"
           >
             Cancel

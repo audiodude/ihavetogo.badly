@@ -3,7 +3,7 @@
     <div class="max-w-7xl mx-auto px-4">
       <div class="flex justify-between items-center h-16">
         <div class="flex items-center space-x-4">
-          <RouterLink to="/" class="text-xl font-bold text-gray-800 hover:text-gray-600">
+          <RouterLink to="/" class="text-xl font-bold text-gray-800 hover:text-gray-800">
             🚽 BathroomFinder
           </RouterLink>
         </div>

@@ -122,16 +122,16 @@ const updateMarkers = () => {
     const popupContent = `
       <div class="p-2 min-w-64">
         <h3 class="font-bold text-lg mb-1">${location.business_name}</h3>
-        <p class="text-sm text-gray-600 mb-2">${location.address}</p>
+        <p class="text-sm text-gray-800 mb-2">${location.address}</p>
 
         ${averageRating > 0 ? `
           <div class="flex items-center space-x-2 mb-2">
             <div class="flex">
               ${generateStarRating(averageRating)}
             </div>
-            <span class="text-sm text-gray-500">(${location.reviews.length} reviews)</span>
+            <span class="text-sm text-gray-700">(${location.reviews.length} reviews)</span>
           </div>
-        ` : '<p class="text-sm text-gray-500 mb-2">No reviews yet</p>'}
+        ` : '<p class="text-sm text-gray-700 mb-2">No reviews yet</p>'}
 
         <div class="flex items-center space-x-4 text-sm">
           <span class="text-green-600">👍 ${location.upvotes}</span>
