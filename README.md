@@ -1,4 +1,4 @@
-# 🚽 BathroomFinder
+# 🚽 Poop Problems
 
 A comprehensive web application for finding, reviewing, and sharing public bathroom locations. Built with Vue 3, TypeScript, and Supabase.
 
