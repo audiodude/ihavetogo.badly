@@ -123,7 +123,7 @@ src/
 - ✅ **Development server running** at `http://localhost:5173/`
 - ✅ **Build system working** - no TypeScript errors
 - ✅ **All core routes defined** and components created
-- ✅ **Database migration ready** in `database-migration.sql`
+- ✅ **Database migration ready** in `supabase/seed.sql`
 - ✅ **Setup instructions documented** in `SETUP.md`
 
 ## 📋 Remaining Implementation Items
@@ -167,7 +167,7 @@ The following features have structure in place but need final implementation:
 ## 📖 Documentation
 
 - ✅ **SETUP.md** - Complete setup and deployment instructions
-- ✅ **database-migration.sql** - Full database schema and seed data
+- ✅ **supabase/seed.sql** - Full database schema and seed data
 - ✅ **PROJECT-SUMMARY.md** - This comprehensive overview
 - ✅ **Inline code documentation** - TypeScript interfaces and component props
 

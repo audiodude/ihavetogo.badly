@@ -26,7 +26,7 @@ npm install
 
 ### Run Database Migration
 
-1. Copy the contents of `database-migration.sql`
+1. Copy the contents of `supabase/seed.sql`
 2. Go to your Supabase project dashboard
 3. Navigate to SQL Editor
 4. Paste and run the migration script
